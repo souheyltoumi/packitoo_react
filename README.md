@@ -26,4 +26,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Style the app i created css file for each component 
 
 ## implement a loader in the posting of data in the server 
+## for the rest i wasnt able due to time because i have my exams this periode but otherwise i am ready for any required explanation because i think i am starting to enjoy using ReactJS 
 
