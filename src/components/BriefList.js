@@ -9,6 +9,11 @@ class BriefList extends Component {
 componentWillMount(){
  this.props.fetchBreifs();
 }
+ componentWillReceiveProps(nextProps){
+  if(nextProps.newbrief){
+    this.props.briefs.unshift(nextProps.newbrief);
+  }
+}
  render() {
 
        const briefItems=this.props.briefs.map(breif =>(
@@ -43,6 +48,7 @@ BriefList.propTypes={
     briefs:PropTypes.array.isRequired
 };
 const mapStateToProps =state =>({
-    briefs:state.briefs.items
+    briefs:state.briefs.items,
+    newbrief:state.briefs.item 
 })
 export default connect(mapStateToProps,{fetchBreifs})(BriefList);
